@@ -1,0 +1,125 @@
+.hero {
+
+    &__image {
+        background-image: url(../assets/illustration-hero-mobile.png);
+        background-size: 109% 100%;
+        background-repeat: no-repeat;
+        background-position: left;
+        min-height: 14.35rem;
+        padding-bottom: 3.1875rem;
+    }
+
+    &__text {
+
+        position: relative;
+        text-align: center;
+        flex: 3;
+
+        @include breakpoint-up(medium) {
+            &::after {
+                content: "";
+                position: absolute;
+
+                z-index: 5;
+            }
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #FFFFFF;
+            padding-bottom: 2rem;
+
+            @include breakpoint-up(medium) {
+                padding-top: 3.125rem;
+                padding-right: 5rem;
+                padding-left: 5rem;
+            }
+
+            @include breakpoint-up(large) {
+                font-size: $font-lg;
+                padding-left: 8.3125rem;
+                padding-right: 8.3125rem;
+            }
+
+        }
+
+        span {
+            color: $teal;
+        }
+
+        p {
+            font-size: 0.9375rem;
+            line-height: 1.7;
+            padding-right: 0.875rem;
+            padding-bottom: 2.625rem;
+            padding-left: 0.875rem;
+
+            @include breakpoint-up(large) {
+                padding-right: 8.5rem;
+                padding-left: 8.5rem;
+                padding-bottom: 4.625rem;
+            }
+        }
+
+
+    }
+
+
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 3.7fr 1fr;
+        grid-template-rows: 1fr;
+
+        @include breakpoint-up(large) {
+            grid-template-columns: 1fr 2.6fr 1fr;
+        }
+
+
+        .heroLeft {
+            background-image: url(../assets/illustration-hero-left.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: right center;
+
+
+        }
+
+        .heroRight {
+            background-image: url(../assets/illustration-hero-right.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: left center;
+
+
+        }
+
+    }
+
+    &__textContainer {
+        background-image: url(../assets/bg-hero-squiggle.svg);
+        background-size: 80% auto;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @include breakpoint-up(medium) {
+            background-size: 85% auto;
+            background-position: 57% 31%;
+        }
+
+        @include breakpoint-up(large) {
+            background-size: auto;
+            background-position: center -2%;
+        }
+
+    }
+
+    .scroll {
+        padding-bottom: 3.125rem;
+
+        @include breakpoint-up(large) {
+            padding-bottom: 4.1875rem;
+        }
+    }
+}

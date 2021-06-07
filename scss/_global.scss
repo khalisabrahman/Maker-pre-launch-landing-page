@@ -1,0 +1,49 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $veryDarkBlue;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    color: $grey;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+
+h1,h2,p {
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    
+    &--pall {
+        padding-top: 4.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 4.5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+//Visibility
+.hide-for-mobile {
+    // hide for mobile
+    @include breakpoint-down(small) {
+        display: none !important;
+    }
+}
+
+.hide-for-desktop {
+
+    // hide for desktop viewport widths
+    @include breakpoint-up(medium) {
+        display: none !important;
+    }
+}
