@@ -1,0 +1,154 @@
+.pricing {
+    text-align: center;
+
+    &__title {
+        padding-top: 1.125rem;
+        padding-bottom: 2rem;
+        font-weight: 800;
+        font-size: 1.5rem;
+        color: $white;
+
+        @include breakpoint-up(large) {
+            font-size: 2rem;
+        }
+    }
+
+    &__description {
+        padding-bottom: 5.625rem;
+        font-weight: 500;
+        font-size: $font-xsm;
+
+    }
+}
+
+.flexContainer {
+    @include breakpoint-up(large) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.freePlan {
+    position: relative;
+    background-color: $navyBlue;
+    border-radius: 8px;
+    text-align: left;
+    padding-top: 3.0625rem;
+    padding-right: 1.875rem;
+    padding-bottom: 1.125rem;
+    padding-left: 1.875rem;
+    margin-bottom: 4.0625rem;
+
+    @include breakpoint-up(medium) {
+        margin-right: 8.625rem;
+        margin-left: 8.625rem;
+    }
+
+    @include breakpoint-up(large) {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-left: 14.875rem;
+    }
+    .shape {
+        position: absolute;
+        top: -1.3125rem;
+    }
+
+    &__title {
+        padding-bottom: 1.625rem;
+        font-size: $font-sm;
+        color: $white;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: $font-xsm;
+        padding-bottom: 3.8125rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        color: $white;
+        padding-bottom: 2.8125rem;
+
+        
+    }
+
+    li {
+        font-size: $font-xsm;
+        color: $white;
+        list-style: none;
+        padding-bottom: 1.625rem;
+    }
+
+    span {
+        padding-right: 20px;
+    }
+}
+
+.paidPlan {
+    position: relative;
+    background-color: $teal;
+    border-radius: 8px;
+    text-align: left;
+    padding-top: 3.0625rem;
+    padding-right: 1.875rem;
+    padding-bottom: 1.125rem;
+    padding-left: 1.875rem;
+
+    @include breakpoint-up(medium) {
+        margin-right: 8.625rem;
+        margin-left: 8.625rem;
+    }
+
+    @include breakpoint-up(large) {
+        margin-right: 14.875rem;
+        margin-left: 0px;
+        padding-top: 4.0625rem;
+        padding-bottom: 2.125rem;
+    }
+
+    .shape {
+        position: absolute;
+        top: -2.125rem;
+    }
+
+    &__title {
+        padding-bottom: 1.625rem;
+        font-size: $font-sm;
+        color: $veryDarkBlue;
+    }
+
+    &__description {
+        font-weight: 500;
+        font-size: $font-xsm;
+        padding-bottom: 3.8125rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+        color: $veryDarkBlue;
+        padding-bottom: 2.8125rem;
+
+        &__month {
+            padding-left: 28px;
+            font-size: $font-xsm;
+            font-weight: 500;
+            color: $grey;
+        }
+        
+    }
+
+    li {
+        font-size: $font-xsm;
+        color: $veryDarkBlue;
+        list-style: none;
+        padding-bottom: 1.625rem;
+    }
+
+    span {
+        padding-right: 20px;
+    }
+}

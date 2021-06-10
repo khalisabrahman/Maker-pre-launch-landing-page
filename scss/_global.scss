@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,h2,p {
+h1,h2,h3,p, ul {
     margin: 0px;
     padding: 0px;
 }
@@ -29,6 +29,11 @@ h1,h2,p {
         padding-right: 1.5rem;
         padding-bottom: 4.5rem;
         padding-left: 1.5rem;
+    }
+
+    &--px {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem; 
     }
 }
 
