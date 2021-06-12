@@ -514,6 +514,14 @@ h1, h2, h3, p, ul {
   font-size: 0.9375rem;
   font-weight: 800;
   color: #093F68;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+}
+
+.notifyButton:hover {
+  background-color: #080C20;
+  border: 2px solid #3EE9E5;
+  color: #FFFFFF;
 }
 
 @media (min-width: 40em) {
@@ -534,6 +542,10 @@ h1, h2, h3, p, ul {
   color: #FFFFFF;
 }
 
+.textbox:focus {
+  border: 2px solid #3EE9E5;
+}
+
 @media (min-width: 40em) {
   .textbox {
     width: 20rem;
@@ -551,5 +563,9 @@ h1, h2, h3, p, ul {
 
 .form-control.error small {
   visibility: visible;
+}
+
+.errorBorder {
+  border: 2px solid #FF2965;
 }
 /*# sourceMappingURL=style.css.map */

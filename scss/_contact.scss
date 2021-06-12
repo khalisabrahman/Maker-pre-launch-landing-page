@@ -53,6 +53,16 @@
     font-size: $font-xsm;
     font-weight: 800;
     color: $navyBlue;
+    cursor: pointer;
+    transition: background-color 150ms ease-in-out;
+
+
+    &:hover {
+        background-color: $veryDarkBlue;
+        border: 2px solid $teal;
+        color: $white;
+    }
+
     @include breakpoint-up(medium) {
         width: 8.75rem;
     }
@@ -69,6 +79,10 @@
     font-size: $font-xsm;
     font-weight: 800;
     color: $white;
+
+    &:focus {
+        border: 2px solid $teal;
+    }
 
     @include breakpoint-up(medium) {
         width: 20rem;
@@ -88,3 +102,8 @@
 .form-control.error small{
     visibility: visible;
 }
+
+.errorBorder {
+    border: 2px solid $red;
+}
+
